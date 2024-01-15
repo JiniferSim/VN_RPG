@@ -13,9 +13,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private LayerMask floorLayer;
 
-    private float horizontalMovement;
-    private float horizontalVelocity;
-
     private bool grounded;
 
     private Rigidbody2D rb;
@@ -40,9 +37,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
-        horizontalMovement = Input.GetAxis("Horizontal");
-
         if (Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.RightArrow)) 
         {
             MoveAndFlipSprite();
@@ -74,10 +68,5 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-
-        Vector2 movement = new Vector2(moveDirection * _speed, rb.velocity.y);
-        rb.velocity = movement;
-
-        animator.SetBool("IsWalking", Mathf.Abs(moveDirection) > 0);
     }
 }

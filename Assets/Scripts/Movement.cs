@@ -43,4 +43,19 @@ public class Movement : MonoBehaviour
         GetComponent<Animator>().SetBool("Walk", walking);
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            LevelLoader levelLoader = FindObjectOfType<LevelLoader>();
+            if (levelLoader != null)
+            {
+                levelLoader.LoadNextLevel();
+            }
+            else
+            {
+                Debug.LogError("LevelLoader not found in the scene.");
+            }
+        }
+    }
 }

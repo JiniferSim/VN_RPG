@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
     public float speed;
     public float MaxFly;
     public float MinFly;
+
+    public Animator rotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class Movement : MonoBehaviour
         {
             transform.position = transform.position + new Vector3(0, -speed * Time.deltaTime, 0);
             walking = true;
+            rotation.SetTrigger("Rotate back");
         }
         GetComponent<Animator>().SetBool("Walk", walking);
     }

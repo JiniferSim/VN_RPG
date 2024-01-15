@@ -68,5 +68,7 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
+        Vector2 movement = new Vector2(moveDirection * _speed * Time.deltaTime, rb.velocity.y);
+        rb.velocity = movement;
     }
 }

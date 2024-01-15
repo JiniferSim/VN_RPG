@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 1184374385}
   - component: {fileID: 1184374386}
   - component: {fileID: 1184374387}
+  - component: {fileID: 1184374388}
   m_Layer: 0
   m_Name: Death
   m_TagString: Untagged
@@ -518,7 +519,7 @@ Transform:
   m_GameObject: {fileID: 1184374381}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17, y: -0.04, z: 0}
+  m_LocalPosition: {x: -0.17, y: -3.81, z: 0}
   m_LocalScale: {x: 1.4988525, y: 1.4988525, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -603,7 +604,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184374381}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fb62bd8eaaf5814294cc8bbe2e51743, type: 3}
   m_Name: 
@@ -613,6 +614,21 @@ MonoBehaviour:
   floorLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &1184374388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184374381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1e7fc8dab63bc44a985104bdb7f437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  MaxFly: 0.4
+  MinFly: -3.8
 --- !u!1 &1986527475
 GameObject:
   m_ObjectHideFlags: 0

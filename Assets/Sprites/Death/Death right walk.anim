@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Death idle
+  m_Name: Death right walk
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 9a987436fcca1be4e9ea50e19031b455, type: 3}
+      value: {fileID: 21300000, guid: 773f00517c80d79479e2a98b807eb1b5, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: 39ddd37cb9338534fac9649f5275a094, type: 3}
+      value: {fileID: 21300000, guid: 0f73186f684c6784797130ca273506df, type: 3}
     - time: 0.6666667
-      value: {fileID: 21300000, guid: 3acf285ed5b698047bdc2ba9e59db556, type: 3}
+      value: {fileID: 21300000, guid: 6eafc39615686f949b67e580a83f3166, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: 9754afa1bd881f948a993cbcd4ab86da, type: 3}
+    - time: 1.3333334
+      value: {fileID: 21300000, guid: 773f00517c80d79479e2a98b807eb1b5, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,15 +52,17 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 9a987436fcca1be4e9ea50e19031b455, type: 3}
-    - {fileID: 21300000, guid: 39ddd37cb9338534fac9649f5275a094, type: 3}
-    - {fileID: 21300000, guid: 3acf285ed5b698047bdc2ba9e59db556, type: 3}
+    - {fileID: 21300000, guid: 773f00517c80d79479e2a98b807eb1b5, type: 3}
+    - {fileID: 21300000, guid: 0f73186f684c6784797130ca273506df, type: 3}
+    - {fileID: 21300000, guid: 6eafc39615686f949b67e580a83f3166, type: 3}
+    - {fileID: 21300000, guid: 9754afa1bd881f948a993cbcd4ab86da, type: 3}
+    - {fileID: 21300000, guid: 773f00517c80d79479e2a98b807eb1b5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.68333334
+    m_StopTime: 1.35
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

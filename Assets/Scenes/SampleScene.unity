@@ -514,6 +514,7 @@ GameObject:
   - component: {fileID: 1184374386}
   - component: {fileID: 1184374387}
   - component: {fileID: 1184374388}
+  - component: {fileID: 1184374389}
   m_Layer: 0
   m_Name: Death
   m_TagString: Untagged
@@ -705,7 +706,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184374381}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c1e7fc8dab63bc44a985104bdb7f437, type: 3}
   m_Name: 
@@ -713,6 +714,21 @@ MonoBehaviour:
   speed: 6
   MaxFly: 0.4
   MinFly: -3.8
+  rotation: {fileID: 0}
+--- !u!114 &1184374389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184374381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29685f76d4cb08e40ad649cae0cc324f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rb: {fileID: 1184374386}
 --- !u!1 &1558581012
 GameObject:
   m_ObjectHideFlags: 0

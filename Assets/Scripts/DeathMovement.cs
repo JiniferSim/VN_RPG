@@ -24,4 +24,16 @@ public class DeathMovement : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            LevelLoader levelLoader = FindObjectOfType<LevelLoader>();
+            if (levelLoader != null)
+            {
+                levelLoader.LoadNextLevel();
+            }
+        }
+    }
 }

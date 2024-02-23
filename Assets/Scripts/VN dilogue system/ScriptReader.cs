@@ -16,9 +16,16 @@ public class ScriptReader : MonoBehaviour
 
     void Start()
     {
-
+        LoadStory();
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            DisplayNextLine();
+        }
+    }
     void LoadStory()
     {
         _StoryScript = new Story(_InkJsonFile.text);
@@ -32,5 +39,10 @@ public class ScriptReader : MonoBehaviour
             text = text?.Trim();
             dialogueBox.text = text;
         }
+        else
+        {
+            dialogueBox.text = "The end.";
+        }
     }
+
 }

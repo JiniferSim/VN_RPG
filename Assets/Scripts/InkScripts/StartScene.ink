@@ -1,1 +1,3 @@
-﻿
+Darling, I understand, but we've already arranged for Lord Casilim to be there.  
+What if the lord were to suddenly disappear?
+...

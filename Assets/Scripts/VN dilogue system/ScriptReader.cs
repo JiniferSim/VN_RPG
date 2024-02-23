@@ -29,6 +29,7 @@ public class ScriptReader : MonoBehaviour
     void LoadStory()
     {
         _StoryScript = new Story(_InkJsonFile.text);
+        _StoryScript.BindExternalFunction("Name", (string charName) => ChangeName(charName));
     }
 
     public void DisplayNextLine()
@@ -45,4 +46,10 @@ public class ScriptReader : MonoBehaviour
         }
     }
 
+    public void ChangeName(string name)
+    {
+        string SpeakerName = name;
+
+        nameTag.text = SpeakerName;
+    }
 }

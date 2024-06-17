@@ -8,13 +8,13 @@ public class LevelLoader : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
 
-    //void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Box"))
-    //    {
-    //        LoadNextLevel();
-    //    }
-    //}
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Natel"))
+        {
+            SceneManager.GetActiveScene("DialogueSystem");
+        }
+    }
 
     public void LoadNextLevel()
     {

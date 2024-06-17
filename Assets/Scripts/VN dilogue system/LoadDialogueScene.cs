@@ -18,7 +18,7 @@ public class LoadDialogueScene : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.("DialogueSystem"));
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene("DialogueSystem"));
     }
 
     IEnumerator LoadLevel()
